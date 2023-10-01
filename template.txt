@@ -1,0 +1,15 @@
+        socket.on('joined', (userid) => {
+            let joinMessage = document.createElement('p')
+            joinMessage.textContent = userid + ' ' + 'joined now'
+            joiningContainer.appendChild(joinMessage)
+        })
+
+        socket.on('render-message', (message, userid) => {
+            let sentMessage = document.createElement('p')
+            sentMessage.textContent = userid + ': ' + message
+            messageContainer.appendChild(sentMessage)
+        })
+
+        socket.on('disconnect', () => {
+
+        })

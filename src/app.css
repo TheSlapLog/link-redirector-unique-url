@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .font-outline-2 {
+      text-shadow:
+      -2px -2px 0 #000,  
+       2px -2px 0 #000,
+       -2px 2px 0 #000,
+        2px 2px 0 #000;
+    }
+    .ys {
+      font-family: 'Young Serif', serif;
+    }
+  }
